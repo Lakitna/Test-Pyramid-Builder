@@ -29,11 +29,11 @@ Open the printed URL (default `http://localhost:8080`). Click a layer to select 
 edge handles to resize, drag layers vertically to reorder, click the "+" on any edge to insert a
 layer, and click any label or note to edit it in place. Export as `.png` or `.svg`, and share any
 pyramid by copying the link — the full pyramid is encoded as base64 JSON in the URL hash
-(`#p=...`). See `src/generator/PLAN.md` for design details.
+(`#p=...`). See `src/PLAN.md` for design details.
 
 ## Fonts
 
 Style fonts come from `@fontsource` packages (OFL licensed). `npm run build:fonts` copies the
-latin woff2 faces into `src/generator/fonts/` under content-hashed names and regenerates
-`src/generator/fonts.generated.ts`. Commit both. Add a new typeface by installing its
+latin woff2 faces into `src/fonts/` under content-hashed names and regenerates
+`src/fonts.generated.ts`. Commit both. Add a new typeface by installing its
 `@fontsource` package and adding a MANIFEST entry in `scripts/build-font.mjs`.
