@@ -5,7 +5,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "tsdown",
+    "build": "tsc && tsdown",
     "build:fonts": "node ./scripts/build-font.mjs",
     "start": "tsdown -w",
     "serve:web": "node ./scripts/serve-web.mjs"

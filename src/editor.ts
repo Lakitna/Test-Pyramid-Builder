@@ -60,11 +60,6 @@ const PATTERN_LABELS: Record<PatternName, string> = {
     horizontal: 'Horizontal lines',
 };
 
-function truncate(text: string, maxChars: number): string {
-    if (text.length <= maxChars) return text;
-    return text.slice(0, maxChars - 1).trimEnd() + '…';
-}
-
 /**
  * The WYSIWYG editor: a formatting toolbar directly above the pyramid canvas, click-to-select
  * layers, drag handles on the selected layer's edges for widths, vertical drag-and-drop to
